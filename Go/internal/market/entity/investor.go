@@ -11,10 +11,9 @@ type InvestorAssetPosition struct {
 	Shares  int
 }
 
-func NewInvestor(id string, name string, assetPosition []*InvestorAssetPosition) *Investor {
+func NewInvestor(id string) *Investor {
 	return &Investor{
 		ID:            id,
-		Name:          name,
 		AssetPosition: []*InvestorAssetPosition{},
 	}
 }

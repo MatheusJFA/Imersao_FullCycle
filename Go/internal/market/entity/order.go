@@ -12,7 +12,7 @@ type Order struct {
 	Transactions  []*Transaction
 }
 
-func NewOrder(id string, investor *Investor, asset *Asset, shares int, price float64, orderType string, status string) *Order {
+func NewOrder(id string, investor *Investor, asset *Asset, shares int, price float64, orderType string) *Order {
 	return &Order{
 		ID:            id,
 		Investor:      investor,
@@ -21,7 +21,7 @@ func NewOrder(id string, investor *Investor, asset *Asset, shares int, price flo
 		PendingShares: shares,
 		Price:         price,
 		OrderType:     orderType,
-		Status:        status,
+		Status:        "OPEN",
 		Transactions:  []*Transaction{},
 	}
 }
