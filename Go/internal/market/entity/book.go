@@ -23,7 +23,7 @@ func NewBook(orderIn, OrderOut chan *Order, waitGroup *sync.WaitGroup) *Book {
 	}
 }
 
-func (book *Book) Trade(order *Order) {
+func (book *Book) Trade() {
 	buyOrders := make(map[string]*Order_Queue)
 	sellOrders := make(map[string]*Order_Queue)
 
