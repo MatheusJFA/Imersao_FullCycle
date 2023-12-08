@@ -1,4 +1,4 @@
-module github.com/MatheusJFA/Imersao_FullCycle
+module github.com/MatheusJFA/Imersao_FullCycle/Go
 
 go 1.21.5
 
