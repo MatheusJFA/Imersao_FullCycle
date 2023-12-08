@@ -29,7 +29,7 @@ func main() {
 	}
 
 	producer := kafka.NewProducer(configMap)
-	kafka := kafka.NewConsumer(configMap, []string{"order"})
+	kafka := kafka.NewConsumer(configMap, []string{"orders"})
 
 	go kafka.Consume(kafkaMessageChannel)
 
